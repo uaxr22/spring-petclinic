@@ -16,8 +16,9 @@ phases:
              -mvn install
     post_build:
         commands:
-         - echo Entered the post_build phase...
-         - echo Build completed on `date`
+             - echo Entered the post_build phase...
+             - echo Build completed on `date`
+             
    artifacts:
         files:
             - target/spring-petclinic-2.2.0.BUILD-SNAPSHOT.jar
