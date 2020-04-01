@@ -2,7 +2,8 @@ version: 0.2
 
 phases:
     install:
-        - apt-get install -y maven
+        commands:
+            - apt-get install -y maven
         runtime-versions:
             java: openjdk8
     pre_build:
