@@ -2,6 +2,7 @@ version: 0.2
 
 phases:
     install:
+        - apt-get install -y maven
         runtime-versions:
             java: openjdk8
     pre_build:
@@ -9,6 +10,7 @@ phases:
             - echo nothing to do in prebuild
     build:
         commands:
+            - echo Entered the build phase...
             - echo Build started on 'date'
             -mvn install
     post_build:
